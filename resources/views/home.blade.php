@@ -15,9 +15,12 @@
                     <a href="#about" class="text-cs-gray hover:text-cs-navy transition">About</a>
                     <a href="#contact" class="text-cs-gray hover:text-cs-navy transition">Contact</a>
                 </div>
-                <a href="#contact" class="hidden md:inline-block bg-cs-gold text-white px-6 py-2 rounded hover:bg-yellow-600 transition">
-                    Get a Quote
-                </a>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="tel:908-670-9559" class="text-cs-navy font-semibold hover:text-cs-gold transition">(908) 670-9559</a>
+                    <a href="#contact" class="bg-cs-gold text-white px-6 py-2 rounded hover:bg-yellow-600 transition">
+                        Get a Quote
+                    </a>
+                </div>
                 <!-- Mobile menu button -->
                 <button id="mobile-menu-btn" class="md:hidden text-cs-gray">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,6 +34,7 @@
                 <a href="#services" class="block py-2 text-cs-gray hover:text-cs-navy">Services</a>
                 <a href="#about" class="block py-2 text-cs-gray hover:text-cs-navy">About</a>
                 <a href="#contact" class="block py-2 text-cs-gray hover:text-cs-navy">Contact</a>
+                <a href="tel:908-670-9559" class="block py-2 text-cs-gold font-semibold">(908) 670-9559</a>
             </div>
         </div>
     </nav>
@@ -216,7 +220,7 @@
                             </div>
                             <div>
                                 <div class="font-semibold text-cs-navy">Call Us</div>
-                                <div class="text-cs-gray">Coming Soon</div>
+                                <a href="tel:908-670-9559" class="text-cs-gold hover:text-yellow-600 font-semibold">(908) 670-9559</a>
                             </div>
                         </div>
                         <div class="flex items-center">
