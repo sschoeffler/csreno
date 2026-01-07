@@ -226,17 +226,6 @@
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-cs-gold/20 rounded-lg flex items-center justify-center mr-4">
                                 <svg class="w-6 h-6 text-cs-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="font-semibold text-cs-navy">Email</div>
-                                <div class="text-cs-gray">info@csreno.com</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-cs-gold/20 rounded-lg flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-cs-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                                 </svg>
@@ -248,67 +237,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm">
-                    @if(session('success'))
-                        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
-                            {{ session('success') }}
-                        </div>
-                    @endif
-                    <form action="{{ route('contact.submit') }}" method="POST">
-                        @csrf
-                        <div class="space-y-6">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-cs-gray mb-2">Name *</label>
-                                <input type="text" id="name" name="name" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-cs-gold focus:border-transparent"
-                                    placeholder="Your name">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-cs-gray mb-2">Email *</label>
-                                <input type="email" id="email" name="email" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-cs-gold focus:border-transparent"
-                                    placeholder="your@email.com">
-                            </div>
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-cs-gray mb-2">Phone</label>
-                                <input type="tel" id="phone" name="phone"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-cs-gold focus:border-transparent"
-                                    placeholder="(555) 555-5555">
-                            </div>
-                            <div>
-                                <label for="service" class="block text-sm font-medium text-cs-gray mb-2">Service Needed</label>
-                                <select id="service" name="service"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-cs-gold focus:border-transparent">
-                                    <option value="">Select a service...</option>
-                                    <option value="remodeling">Remodeling</option>
-                                    <option value="flooring">Flooring</option>
-                                    <option value="finish_work">Finish Work / Trim</option>
-                                    <option value="decks">Decks</option>
-                                    <option value="cement">Cement Work</option>
-                                    <option value="landscaping">Landscaping</option>
-                                    <option value="snow_removal">Snow Removal</option>
-                                    <option value="doors_windows">Doors & Windows</option>
-                                    <option value="drywall">Sheet Rock / Drywall</option>
-                                    <option value="painting">Paint & Spackle</option>
-                                    <option value="plumbing">Plumbing</option>
-                                    <option value="lighting">Lighting</option>
-                                    <option value="cabinets">Cabinets</option>
-                                    <option value="stairs">Stairs</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-cs-gray mb-2">Project Details *</label>
-                                <textarea id="message" name="message" rows="4" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-cs-gold focus:border-transparent"
-                                    placeholder="Tell us about your project..."></textarea>
-                            </div>
-                            <button type="submit"
-                                class="w-full bg-cs-gold text-white py-4 rounded font-semibold hover:bg-yellow-600 transition">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
+                <div class="bg-gradient-to-br from-cs-navy to-slate-700 p-8 rounded-lg text-white text-center">
+                    <h3 class="text-2xl font-bold mb-4">Ready to Get Started?</h3>
+                    <p class="text-gray-300 mb-6">
+                        Give us a call to discuss your project. We'll provide a free estimate and work with you to bring your vision to life.
+                    </p>
+                    <a href="tel:908-670-9559" class="inline-block bg-cs-gold text-white px-8 py-4 rounded text-xl font-bold hover:bg-yellow-600 transition">
+                        (908) 670-9559
+                    </a>
+                    <p class="text-gray-400 mt-4 text-sm">
+                        Available Monday - Saturday
+                    </p>
                 </div>
             </div>
         </div>
